@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main- imprimirá _putchar
- * Return: siempre devuelve 0
+ * print_alphabet- imprimirá el alfabeto en minuscula
  */
 void print_alphabet(void)
 {
 	char i;
-	    for (i = 'a'; i <= 'z'; i++)
-		            putchar(i);
+
+		for (i = 'a'; i <= 'z'; i++)
+			_putchar(i);
+	_putchar("\n");
 }
