@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
+#include "main.h"
 /**
  * main- imprimirá _putchar
  * Return: siempre devuelve 0
