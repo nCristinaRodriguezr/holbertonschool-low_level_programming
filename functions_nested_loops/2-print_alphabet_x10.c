@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_alphabet- imprimirá el alfabeto en minuscula
+ * print_alphabet_x10- imprimirá el alfabeto en minuscula x10
  */
 void print_alphabet_x10(void)
 {
