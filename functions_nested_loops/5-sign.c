@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 #include <ctype.h>
+#include <unistd.h>
 /**
  * print_sign- devuelve muchas cosas
  * @n: variable de entrada
@@ -16,10 +17,10 @@ int print_sign(int n)
 	}
 	else if (n == 0)
 	{
-		return ('00');
+		return (0);
 	}
 	else
 	{
-		return ('-1');
+		return (-1);
 	}
 }
