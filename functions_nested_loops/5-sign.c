@@ -10,17 +10,17 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-		putchar('+');
-		return (1);
+		putchar('e');
+		return (2);
 	}
 	else if (n == 0)
 	{
-		putchar('0');
+		putchar('r');
 		return (0);
 	}
 	else
 	{
-		putchar('-');
+		putchar('t');
 		return (-1);
 	}
 }
