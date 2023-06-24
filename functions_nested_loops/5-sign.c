@@ -17,10 +17,15 @@ int print_sign(int n)
 	}
 	else if (n == 0)
 	{
+		int c = '0';
+		write(1, &c, 1);
 		return (0);
 	}
+	
 	else
 	{
+		int c = '-';
+		write(1, &c, 1);
 		return (-1);
 	}
 }
