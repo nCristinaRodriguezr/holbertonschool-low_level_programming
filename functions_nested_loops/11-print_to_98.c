@@ -26,9 +26,11 @@ void print_number(int n)
  */
 void print_to_98(int n)
 {
+	int i, j;
+
 	if (n <= 98)
 	{
-		for (int i = n; i <= 98; i++)
+		for (i = n; i <= 98; i++)
 		{
 			print_number(i);
 			if (i != 98)
@@ -40,10 +42,10 @@ void print_to_98(int n)
 	}
 	else
 	{
-		for (int i = n; i >= 98; i--)
+		for (j = n; j >= 98; j--)
 		{
-			print_number(i);
-			if (i != 98)
+			print_number(j);
+			if (j != 98)
 			{
 				_putchar(',');
 				_putchar(' ');
