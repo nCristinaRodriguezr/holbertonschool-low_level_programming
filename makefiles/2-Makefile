@@ -1,8 +1,7 @@
 CC = gcc
 SRC = main.c school.c
-NAME = school
-
 OBJ := $(SRC:.c=.o)
+NAME = school
 
 all: $(NAME)
 
@@ -11,9 +10,6 @@ $(NAME): $(OBJ)
 
 %.o: %.c
 	$(CC) -c $< -o $@
-
-print_obj:
-	@echo $(OBJ)
 
 clean:
 	rm -f $(OBJ) $(NAME)
