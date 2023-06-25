@@ -20,17 +20,17 @@ void times_table(void)
 			if (result < 10)
 			{
 				if (col != 0)
-					putchar(',');
-					putchar(' ');
-					putchar(' ');
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
 			}
 			else
 			{
-				putchar(',');
-				putchar(' ');
+				_putchar(',');
+				_putchar(' ');
 			}
-			printf("%d", result);
+			_putchar(result + '0');
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
