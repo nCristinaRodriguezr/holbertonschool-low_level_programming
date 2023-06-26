@@ -8,3 +8,6 @@ void more_numbers(void);
 void print_line(int n);
 void print_diagonal(int n);
 void print_square(int size);
+void print_number(int n);
+void fizzBuzz(void);
+void print_text(const char *c);
