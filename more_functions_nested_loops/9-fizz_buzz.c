@@ -8,7 +8,7 @@ void print_number(int n)
 {
 	if (n < 0)
 	{
-		_putchar('-');
+		putchar('-');
 		n = -n;
 	}
 	if (n >= 10)
@@ -16,7 +16,7 @@ void print_number(int n)
 		print_number(n / 10);
 		n %= 10;
 	}
-	_putchar('0' + n);
+	putchar('0' + n);
 }
 /**
  * print_text-imprime cadena de caracteres
@@ -28,7 +28,7 @@ void print_text(const char *c)
 
 	while (c[i] != '\0')
 	{
-		_putchar(c[i]);
+		putchar(c[i]);
 		i++;
 	}
 }
