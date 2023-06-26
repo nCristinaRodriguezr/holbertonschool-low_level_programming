@@ -11,3 +11,4 @@ void print_square(int size);
 void print_number(int n);
 void fizzBuzz(void);
 void print_text(const char *c);
+void print_triangle(int size);
