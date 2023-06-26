@@ -64,6 +64,10 @@ void fizzBuzz(void)
 		{
 			print_number(i);
 		}
+		if (i != 100)
+		{
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 }
