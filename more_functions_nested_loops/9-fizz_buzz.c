@@ -40,7 +40,7 @@ void print_text(const char *c)
  */
 void fizzBuzz(void)
 {
-	int i, j;
+	int i;
 
 	char fizz[] = "Fizz";
 	char buzz[] = "Buzz";
