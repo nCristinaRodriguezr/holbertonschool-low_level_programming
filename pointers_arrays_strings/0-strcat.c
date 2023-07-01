@@ -8,6 +8,9 @@
  */
 char *_strcat(char *dest, char *src)
 {
+/*
+ * aqui ptr apunta a lo mismo que apunta dest
+ */
 	char *ptr = dest;
 
 	while (*ptr)
@@ -16,6 +19,10 @@ char *_strcat(char *dest, char *src)
 	}
 	while (*src)
 	{
+/*
+ * aqui ptr se ha movido sobre dest, y ahora toma el valor al que
+ * src esta apuntando y lo esta poniendo despues de la cadena de dest
+ */
 		*ptr = *src;
 		ptr++;
 		src++;
