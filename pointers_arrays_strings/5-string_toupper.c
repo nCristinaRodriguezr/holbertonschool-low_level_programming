@@ -9,17 +9,16 @@
 char *string_toupper(char *str)
 {
 	char *ptr = str;
-	char *str2 = str;
 
 	while (*ptr)
 	{
 		if (*ptr >= 97 && *ptr <= 122)
 		{
 			*ptr = *ptr - 32;
-			ptr++;
 		}
+		ptr++;
 	}
-	return (str2);
+	return (str);
 }
 /*
  * utilice el codigo ASCCI para identicar
