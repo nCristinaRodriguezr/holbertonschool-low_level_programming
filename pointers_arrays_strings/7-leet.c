@@ -11,10 +11,11 @@ char *leet(char *str)
 	char *ptr = str;
 	char *letter = "AEOTL";
 	char *numbers = "43071";
+	int i;
 
 	while (*ptr)
 	{
-		for (int i = 0; letter[i]; i++)
+		for ( i = 0; letter[i]; i++)
 		{
 			if (*ptr == letter[i] || *ptr == letter[i] + 32)
 			{
