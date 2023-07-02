@@ -15,7 +15,7 @@ char *leet(char *str)
 
 	while (*ptr)
 	{
-		for ( i = 0; letter[i]; i++)
+		for (i = 0; letter[i]; i++)
 		{
 			if (*ptr == letter[i] || *ptr == letter[i] + 32)
 			{
