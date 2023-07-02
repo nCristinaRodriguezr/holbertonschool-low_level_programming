@@ -9,6 +9,7 @@
 char *string_toupper(char *str)
 {
 	char *ptr = str;
+	char *str2 = str;
 
 	while (*ptr)
 	{
@@ -18,7 +19,7 @@ char *string_toupper(char *str)
 			ptr++;
 		}
 	}
-	return (str);
+	return (str2);
 }
 /*
  * utilice el codigo ASCCI para identicar
