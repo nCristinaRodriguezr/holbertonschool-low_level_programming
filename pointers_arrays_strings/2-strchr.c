@@ -14,6 +14,9 @@ char *_strchr(char *s, char c)
 	{
 		ptr++;
 	}
-	return (ptr);
+	if (*prt != "\O")
+	{
+		return (ptr);
+	}
 	return (NULL);
 }
