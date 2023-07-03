@@ -13,6 +13,7 @@ char *_strchr(char *s, char c)
 	while (*ptr && *ptr != c)
 	{
 		ptr++;
+		return (NULL);
 	}
 	return (ptr);
 }
