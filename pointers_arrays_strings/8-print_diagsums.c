@@ -18,11 +18,11 @@ void print_diagsums(int *a, int size)
 		{
 			if (j == i)
 			{
-				sum1 = sum1 + a[i * size + j];
+				sum1 = sum1 + *(a + (i * size + j));
 			}
 			if (j == size - 1 - i)
 			{
-				sum2 = sum2 + a[i * size + j];
+				sum2 = sum2 + *(a + (i * size + j));
 			}
 		}
 	}
