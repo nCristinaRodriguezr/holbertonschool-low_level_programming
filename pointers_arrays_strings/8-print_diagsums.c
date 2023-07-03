@@ -10,12 +10,21 @@ void print_diagsums(int *a, int size)
 {
 	int sum1 = 0;
 	int sum2 = 0;
-	int i;
+	int i, j;
 
 	for (i = 0; i < size; i++)
 	{
-		sum1 += a[i * size + i];
-		sum2 += a[i * size + (size - 1 - i)];
+		for (j = 0; j < size; j++)
+		{
+			if (j == i)
+			{
+				sum1 = sum1 + a[i * size + j];
+			}
+			if (j == size - 1 - i)
+			{
+				sum2 = sum2 + a[i * size + j];
+			}
+		}
 	}
 	putchar (sum1 + '0');
 	putchar (',');
