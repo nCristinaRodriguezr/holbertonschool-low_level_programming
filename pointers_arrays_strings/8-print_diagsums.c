@@ -48,4 +48,5 @@ void print_diagsums(int *a, int size)
 	putchar (',');
 	putchar (' ');
 	print_number(sum2);
+	putchar('\n');
 }
