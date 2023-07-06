@@ -27,6 +27,6 @@ int recursion_max(int n, int i)
 	}
 	else
 	{
-		return (recursion_max(n, i++));
+		return (recursion_max(n, i + 1));
 	}
 }
