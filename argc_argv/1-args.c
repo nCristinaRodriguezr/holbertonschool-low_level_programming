@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#pragma unused(argv)
 /**
  * main- imprimirá el numero de argumentos
  * @argc: es un contador de argumentos
