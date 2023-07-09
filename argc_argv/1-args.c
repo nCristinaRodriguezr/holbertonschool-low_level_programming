@@ -9,6 +9,9 @@
  */
 int main(int argc, char *argv[])
 {
-	printf("%d\n", argc);
+	if (argv)
+	{
+		printf("%d\n", argc);
+	}
 	return (0);
 }
