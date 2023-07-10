@@ -34,19 +34,22 @@ int esNumeroPositivo(const char *cadena)
 int main(int argc, char *argv[])
 {
 	int i;
+	int result = 0;
 	int num1;
-	int num2;
 
 	char j[] = "Error";
 
-	if (argc == 3)
+	if (argc == 1)
 	{
-		if (esNumeroPositivo(argv[1]) && esNumeroPositivo(argv[2]))
+		printf("0\n");
+		return (0);
+	}
+	for (i = 1; i < argc; i++)
+	{
+		if (esNumeroPositivo(argv[i]))
 		{
-			num1 = atoi(argv[1]);
-			num2 = atoi(argv[2]);
-			i = num1 + num2;
-			printf("%d\n", i);
+			num1 = atoi(argv[i]);
+			result = result + num1;
 		}
 		else
 		{
@@ -54,9 +57,6 @@ int main(int argc, char *argv[])
 			return (1);
 		}
 	}
-	else if (argc == 1)
-	{
-		printf("0\n");
-	}
+	printf("%d\n", result);
 	return (0);
 }
