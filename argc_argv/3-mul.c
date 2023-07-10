@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 	int num1;
 	int num2;
 
-	char j[] = "error";
+	char j[] = "Error";
 
 	if (argc == 3)
 	{
@@ -25,6 +25,7 @@ int main(int argc, char *argv[])
 	else
 	{
 		printf("%s\n", j);
+		return (1);
 	}
-	return (1);
+	return (0);
 }
