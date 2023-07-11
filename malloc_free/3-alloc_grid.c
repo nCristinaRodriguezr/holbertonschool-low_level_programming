@@ -51,3 +51,23 @@ int **alloc_grid(int width, int height)
 	}
 	return (grid);
 }
+/**
+ * free_grid-vamos a librerar la memoria con esta funcion
+ * @grid: puntero de punteros
+ * @alto: el alto o filas de la matriz
+ * Return: Devuelve
+ */
+void free_grid(int **grid, int alto)
+{
+	int k;
+
+	if (grid == NULL)
+	{
+		return;
+	}
+	for (int k = 0; k < alto; k++)
+	{
+		free(grid[k]);
+	}
+	free(grid);
+}
