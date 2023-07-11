@@ -57,7 +57,7 @@ int **alloc_grid(int width, int height)
  * @alto: el alto o filas de la matriz
  * Return: Devuelve
  */
-void free_grid(int **grid, int alto)
+void free_grid(int **grid, int height)
 {
 	int i;
 
@@ -65,7 +65,7 @@ void free_grid(int **grid, int alto)
 	{
 		return;
 	}
-	for (i = 0; i < alto; i++)
+	for (i = 0; i < height; i++)
 	{
 		free(grid[i]);
 	}
