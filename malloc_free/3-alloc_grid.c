@@ -59,13 +59,13 @@ int **alloc_grid(int width, int height)
  */
 void free_grid(int **grid, int alto)
 {
-	int k;
+	int i;
 
 	if (grid == NULL)
 	{
 		return;
 	}
-	for (int k = 0; k < alto; k++)
+	for (int i = 0; i < alto; i++)
 	{
 		free(grid[k]);
 	}
