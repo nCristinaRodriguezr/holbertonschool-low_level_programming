@@ -65,7 +65,7 @@ void free_grid(int **grid, int alto)
 	{
 		return;
 	}
-	for (int i = 0; i < alto; i++)
+	for (i = 0; i < alto; i++)
 	{
 		free(grid[k]);
 	}
