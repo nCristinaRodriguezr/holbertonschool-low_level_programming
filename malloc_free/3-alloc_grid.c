@@ -54,7 +54,7 @@ int **alloc_grid(int width, int height)
 /**
  * free_grid-vamos a librerar la memoria con esta funcion
  * @grid: puntero de punteros
- * @alto: el alto o filas de la matriz
+ * @height: el alto o filas de la matriz
  * Return: Devuelve
  */
 void free_grid(int **grid, int height)
