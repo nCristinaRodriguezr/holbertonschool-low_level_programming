@@ -3,8 +3,8 @@
 #include "main.h"
 /**
  * *_calloc- hace lo mismo que la funcion calloc, inicializar en 0
- * @nmemb: entero sin signo
- * @size: tamaño sin signo
+ * @nmemb: numero de elementos
+ * @size: tamaño de cada elemento
  * Return: Devuelve ptr vacio
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
