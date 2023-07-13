@@ -36,6 +36,26 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		}
 	}
-	free_grid(grid, height);
+	free_grid2(grid, height);
 	return (grid);
+}
+/**
+ * free_grid2-frees a 2 dimensional grid previously created
+ * @grid: puntero de punteros
+ * @height: alto de la matriz
+ * Return: Devuelve 1
+ */
+void free_grid2(int **grid, int height)
+{
+	int i;
+
+	if (grid == NULL)
+	{
+		return;
+	}
+	for (i = 0; i < height; i++)
+	{
+		free(grid[i]);
+	}
+	free(grid);
 }
