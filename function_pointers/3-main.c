@@ -5,9 +5,8 @@
  * main- imprimirá el resultado de la calculadora
  * @argc: es un contador de argumentos
  * @argv: es el apuntador hacia el primer caracter de una matriz
- * Return: Devuelve 0
  */
-int main(int argc, char *argv[])
+void main(int argc, char *argv[])
 {
 	int num1 = atoi(argv[1]);
 	int num2 = atoi(argv[3]);
@@ -28,5 +27,4 @@ int main(int argc, char *argv[])
 	}
 	result = f(num1, num2);
 	printf("%d\n", result);
-	return (0);
 }
