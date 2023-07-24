@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "3-calc.h"
 /**
  * main- imprimirá el resultado de la calculadora
@@ -24,7 +25,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	num2 = atoi(argv[3]);
 	s = argv[2];
 	f = get_op_func(s);
-	if (f == NULL)
+	if (f == NULL || strlen(s) > 1)
 	{
 		printf("Error\n");
 		exit(99);
