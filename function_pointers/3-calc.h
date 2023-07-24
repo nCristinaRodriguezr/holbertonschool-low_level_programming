@@ -1,6 +1,6 @@
 #ifndef CALC_H
 #define CALC_H
-int main(int argc, char *argv[]);
+int main(void);
 /**
  * struct op - Struct op
  * @op: The operator
