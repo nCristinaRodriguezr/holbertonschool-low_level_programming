@@ -49,7 +49,7 @@ int op_mul(int a, int b)
 int op_div(int a, int b)
 {
 	 int result;
-	
+
 	if (b == 0)
 	{
 		printf("Error\n");

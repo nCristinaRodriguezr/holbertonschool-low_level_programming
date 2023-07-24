@@ -15,13 +15,13 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	int (*f)(int, int);
 	int result;
 
-	if (argc > 4)
+	if (argc == 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
 	f = get_op_func(s);
-	if (f == NULL)
+	if (f == NULL || sizeof(s) > 1)
 	{
 		printf("Error\n");
 		exit(99);
