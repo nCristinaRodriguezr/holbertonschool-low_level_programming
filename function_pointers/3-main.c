@@ -21,7 +21,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		exit(98);
 	}
 	f = get_op_func(s);
-	if (f == NULL || sizeof(s) > 1)
+	if (f == NULL)
 	{
 		printf("Error\n");
 		exit(99);
