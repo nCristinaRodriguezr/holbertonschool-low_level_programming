@@ -1,6 +1,5 @@
 #ifndef CALC_H
 #define CALC_H
-int main(void);
 /**
  * struct op - Struct op
  * @op: The operator
@@ -17,4 +16,5 @@ int op_mul(int a, int b);
 int op_div(int a, int b);
 int op_mod(int a, int b);
 int (*get_op_func(char *s))(int, int);
+int main(int argc, char *argv[]);
 #endif
