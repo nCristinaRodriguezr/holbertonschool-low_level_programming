@@ -22,15 +22,15 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 		x = 0;
-		while (x < 4)
+		while (j < 4)
 		{
-			if (format[i] == *(variables[x].ptr))
+			if (format[i] == *(variables[j].ptr))
 			{
 				printf("%s", esp);
-				variables[x].function(argts);
+				variables[j].function(argts);
 				esp = coma;
 			}
-			x++;
+			j++;
 		}
 		i++;
 	}
