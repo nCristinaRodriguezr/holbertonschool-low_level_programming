@@ -12,10 +12,10 @@ void print_all(const char * const format, ...)
 	va_list argts;
 
 	type_var variables[] = {
-		{"c", p_char},
-		{"i", p_int},
-		{"f", p_float},
-		{"s", p_str},
+		{"c", datac},
+		{"i", datanum},
+		{"f", dataf},
+		{"s", datas},
 		{NULL, NULL}
 	};
 	va_start(argts, format);
@@ -38,34 +38,34 @@ void print_all(const char * const format, ...)
 	va_end(argts);
 }
 /**
- * p_char - print char
+ * datac - print char
  * @argts: list of arguments
  */
-void p_char(va_list argts)
+void datac(va_list argts)
 {
 	printf("%c", va_arg(argts, int));
 }
 /**
- * p_int - print int
+ * datanum - print int
  * @argts: list of arguments
  */
-void p_int(va_list argts)
+void datanum(va_list argts)
 {
 	printf("%d", va_arg(argts, int));
 }
 /**
- * p_float - print float
+ * dataf - print float
  * @argts: list of arguments
  */
-void p_float(va_list argts)
+void  dataf(va_list argts)
 {
 	printf("%f", va_arg(argts, double));
 }
 /**
- * p_str - print string
+ * datas - print string
  * @argts: list of arguments
  */
-void p_str(va_list argts)
+void datas(va_list argts)
 {
 	char *str = va_arg(argts, char *);
 
