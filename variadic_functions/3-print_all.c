@@ -21,7 +21,7 @@ void print_all(const char * const format, ...)
 	va_start(argts, format);
 	while (format && format[i])
 	{
-		x = 0;
+		j = 0;
 		while (j < 4)
 		{
 			if (format[i] == *(variables[j].ptr))
