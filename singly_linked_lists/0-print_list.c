@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <lists.h>
 /**
  * print_list - Funcion que imprime todos los elementos de una lista
  * @h: A la lista que el usurio desea imprimir
