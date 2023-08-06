@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "list.h"
+#include "lists.h"
 /**
  * add_dnodeint_end - Esta funcion crea un nuevo nodo al final de la lista
  * @head: Puntero a la lista que el usuario desea imprimir
