@@ -4,7 +4,7 @@
  * print_binary - Funcion que pasa un decimal a numero binario
  * @n: puntero que apunta a una cadena de numero
  */
-void print_binary(unsigned long int n);
+void print_binary(unsigned long int n)
 {
 	if (n > 1)
 	{
