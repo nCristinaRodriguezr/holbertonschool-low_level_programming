@@ -8,7 +8,7 @@
  * @letters: numero de letras que deberia leer e imprimir
  * Return: Devuelve read bytes
  */
-ssize_t read_textfile(const char *filename, size_t letters);
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	FILE *file;
 	char *buffer;
